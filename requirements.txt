@@ -8,7 +8,9 @@ numpy
 scikit-learn
 matplotlib
 seaborn
-
+io
+requests
+gzip
 pyspark==3.1.2
 
 #  Others - for the Github Workflows
