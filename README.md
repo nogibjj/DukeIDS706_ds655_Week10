@@ -36,6 +36,7 @@ Files in this repository include:
 
 ## 3. Codes
   This folder contains all the code files used in this repository - the files named "Test_" will be used for testing and the remaining will define certain functions
+  The `Pyspark.py` file contains the code to read and evaluate the large HIGGS dataset
 
 
 ## 4. Resources
