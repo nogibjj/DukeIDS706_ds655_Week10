@@ -9,7 +9,6 @@ scikit-learn
 matplotlib
 seaborn
 requests
-gzip
 pyspark==3.1.2
 
 #  Others - for the Github Workflows
