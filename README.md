@@ -1,5 +1,28 @@
 # Python Repository to perform data processing using PySpark [![Test](https://github.com/nogibjj/DukeIDS706_ds655_Week10/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_Week10/actions/workflows/test.yml)
 
+This repository uses the [HIGGS Dataset](https://archive.ics.uci.edu/ml/datasets/HIGGS) from the UCI Machine Learning Repository. This dataset has been produced using Monte Carlo simulations. 
+
+The first 21 features (columns) are kinematic properties measured by the particle detectors in the accelerator. The last seven features are functions of the first 21 features; these are high-level features derived by physicists to help discriminate between the two classes. There is an output variable 'label' that identifies the two classes, with 's' indicating the signal process which produces Higgs bosons and 'b' indicating a background process. More Details about the dataset can be found [Here](https://archive.ics.uci.edu/ml/machine-learning-databases/00280/).
+
+
+We are using the `Pyspark.py` file in the Codes folder to do the following - 
+This Python script does the following:
+
+1. Imports necessary libraries.
+2. Defines the URL of the HIGGS dataset.
+3. Creates a SparkSession, which is the entry point to any Spark functionality.
+4. Downloads the HIGGS dataset from the UCI Machine Learning Repository and decompresses it.
+5. Reads the downloaded file into a pandas DataFrame.
+6. Converts the pandas DataFrame to a PySpark DataFrame.
+7. Counts the number of rows in the DataFrame and prints it.
+8. Stops the SparkSession.
+
+The HIGGS dataset contains *11,000,000 instances*, each with *28* attributes. The file size is approximately *6.8 GB* when uncompressed.
+
+It is much better to access this large dataset in Pyspark as compared to Pandas in Python. This is because PySpark is designed to work with big data and can distribute the task of reading the dataset across multiple nodes if running on a cluster. This allows it to read and process data in parallel, which can greatly speed up the operation.
+
+
+
 Files in this repository include:
 
 
